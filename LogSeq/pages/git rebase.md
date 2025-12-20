@@ -1,0 +1,5 @@
+-
+- rebase 前
+	- ![git_rebase1.jpg](../assets/git_rebase1_1766236564744_0.jpg)
+- 执行git checkout feature，git rebase master 得到
+	- ![git_rebase2.jpg](../assets/git_rebase2_1766236607345_0.jpg)
