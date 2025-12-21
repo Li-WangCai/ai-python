@@ -3,3 +3,4 @@
 	- ![git_rebase1.jpg](../assets/git_rebase1_1766236564744_0.jpg)
 - 执行git checkout feature，git rebase master 得到
 	- ![git_rebase2.jpg](../assets/git_rebase2_1766236607345_0.jpg)
+- rebase 一个节点的某一方祖先，只是把这个祖先的头移到当前节点

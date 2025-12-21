@@ -1,0 +1,1 @@
+- git branch -f branchname CommitHash 强制在CommitHash节点创建分支branchname, 原来的branchname分支被取消
