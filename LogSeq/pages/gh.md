@@ -1,0 +1,1 @@
+- 在gitkraken中可以做本地操作，但是git push到remote时还是需要在term下做，这样gh才能介入帮助连接github
