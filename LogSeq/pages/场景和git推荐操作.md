@@ -1,0 +1,17 @@
+- 推荐操作
+	- 基本操作
+		- 本地空白的时候，用[[git clone]]把[[remote]]上的 [[repository]]整体克隆到本地
+		- 在[[workspace]]中工作，通过[[git diff]]看作了哪些改动，如果满意就[[git add]] 到[[stage]]。如果不满意就[[git checkout]] 退回[[stage]]中的版本
+		- 完成一个fix或feature之后，通过上一步的检查([[git diff]],[[git add]])，满意就把[[stage]]通过[[git commit]]提交到本地[[repository]]，如果不满意，就[[git reset]]将 [[repository]]中早期版本替换到[[stage]]中当前的版本。
+		- 一天结束以后，将本地 [[repository]]中的版本推到[[remote]]
+	- 多分支操作
+		- 所有更改(feature和fix)都是先创建新分支，多次提交完成更改以后再把新分支和主分支合并。具体
+			- 先在本地 [[repository]]上建立分支[[git branch]] BranchName, 将 [[workspace]] 切换到新分支[[git checkout]] BranchName。或者用一个命令[[git checkout -b]] BanchName
+			- 更改后[[git add]]+[[git commit]](或者[[git commit -a]])提交更改。更改全部完成以后通过[[git merge]]或者[[git rebase]]或者 [[git cherry-pick]] 将更改合并到主分支[[master]]
+			- 使用[[git rebase]]的好处是得到一个单一线性的主分支，而不会是像[[git merge]]一样是一团蜘蛛网
+	- debug
+		- 创建一个debug分支，然后再分支中添加各种debug信息，debug成功以后，使用[[git rebase]] -i或者 [[git cherry-pick]] 选择那些有用的修改合并到master
+	- 修改古代的节点，并且让该修改影响后续的版本
+		- [[git rebase]] -i 把古代节点a移到最晚节点，用[[git commit --amend]]修改a（但不创建新节点），然后再用[[git rebase]] -i 把顺序调回原样。注意rebase是把每次提交的delta都从新应用一遍，所以调回原来顺序以后，a之后所有的更改都是在新的a的基础上该得，这就实现了目标
+		-
+	-
