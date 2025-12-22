@@ -1,3 +1,6 @@
+- ((6948cccf-6ac8-41db-aeb4-309a88d806fc))
+- ((6948cd06-ef42-410c-8d2b-dbe580368701))
+-
 - 推荐操作
 	- 基本操作
 		- 本地空白的时候，用[[git clone]]把[[remote]]上的 [[repository]]整体克隆到本地
@@ -13,5 +16,6 @@
 		- 创建一个debug分支，然后再分支中添加各种debug信息，debug成功以后，使用[[git rebase]] -i或者 [[git cherry-pick]] 选择那些有用的修改合并到master
 	- 修改古代的节点，并且让该修改影响后续的版本
 		- [[git rebase]] -i 把古代节点a移到最晚节点，用[[git commit --amend]]修改a（但不创建新节点），然后再用[[git rebase]] -i 把顺序调回原样。注意rebase是把每次提交的delta都从新应用一遍，所以调回原来顺序以后，a之后所有的更改都是在新的a的基础上该得，这就实现了目标
-		-
+	- 服务器操作
+		- 不要直接[[git pull]]，更好的方式是[[git fetch]], [[git diff]]看看有啥变化，然后决定用[[git merge]]还是[[git rebase]]. rebase生成一个线性历史，更加推荐
 	-

@@ -11,7 +11,7 @@
 		- 表示你在这个分支上进行工作
 		- 新的提交会在这个分支上创建
 	- HEAD
-		- **附加状态（Attached）**：指向一个分支。 checkout 分支的就指向分支。
-		- **分离状态（Detached）**：指向具体的提交。 checkout nodehash的就指向节点
+		- **附加状态（Attached）**：指向一个分支。 checkout 分支的就指向分支。在这个状态如果commit，该分支就会更新到最新的commit
+		- **分离状态（Detached）**：指向具体的提交。 checkout nodehash的就指向节点。在这个状态如果commit，HEAD会移动到新节点，但是该分支还停留在原来的节点。
 		-
 	-
