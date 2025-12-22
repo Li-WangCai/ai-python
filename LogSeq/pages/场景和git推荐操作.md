@@ -17,6 +17,7 @@
 	- 修改古代的节点，并且让该修改影响后续的版本
 		- [[git rebase]] -i 把古代节点a移到最晚节点，用[[git commit --amend]]修改a（但不创建新节点），然后再用[[git rebase]] -i 把顺序调回原样。注意rebase是把每次提交的delta都从新应用一遍，所以调回原来顺序以后，a之后所有的更改都是在新的a的基础上该得，这就实现了目标
 	- 服务器操作
-		- 不要直接[[git pull]]，更好的方式是[[git fetch]], [[git diff]]看看有啥变化，然后决定用[[git merge]]还是[[git rebase]]. rebase生成一个线性历史。喜欢历史清晰的用rebase，喜欢保证时间先后（credit）的用merge
-		- [[git push]] 的节点如果和别人提交的节点出现冲突，首先fetch服务器最新node，将自己的node rebase/merge到origin/master最新node上，然后再重新提交。使用rebase在服务器端会维持一个线性的历史，使用merge会把本地merge出来的蜘蛛网传到服务器端, [[git fetch]]+[[git rebase]]= git pull --rebase
+		- 不要直接[[git pull]]，更好的方式是[[git fetch]], [[git diff]]看看有啥变化，然后决定用[[git merge]]还是[[git rebase]]. rebase生成一个线性历史。喜欢历史清晰的用rebase，喜欢保证时间先后（credit）的用merge. 可以用[[git pull]] --rebase = [[git fetch]]+[[git rebase]]
+		- [[git push]] 的节点如果和别人提交的节点出现冲突，首先fetch服务器最新node，将自己的node rebase/merge到origin/master最新node上，然后再重新提交。使用rebase在服务器端会维持一个线性的历史，使用merge会把本地merge出来的蜘蛛网传到服务器端,
+		- 可以使用fetch/pull/push origin source/dest 指定来源和目的地。尽量引用节点而不是分支。用分支会改变分支当前指针位置，有时候并不是我们所希望的更改。用节点之后还可以手动调整分支。
 	-
