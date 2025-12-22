@@ -1,0 +1,1 @@
+- 值得是设定本地branch和服务器副本origin/branch的对应关系，设定以后pull fetch push 的时候在对应的branch之间执行推送。

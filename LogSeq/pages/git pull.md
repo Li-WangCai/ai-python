@@ -1,0 +1,5 @@
+- git pull会把远端从上一次fetch以来所有的新node都下载并合并到本地
+- git pull = git fetch +git merge
+- git pull --rebase= git fetch + git rebase
+- git pull origin main 从远端拉main分支并且 merge
+- git pull origin main:foo从远端拉main分支存到本地foo分支然后merge

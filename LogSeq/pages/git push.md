@@ -1,0 +1,4 @@
+- git push会在本地创建master节点副本origin/master，然后把副本推送服务器
+- git push origin b1 指定将b1推送到remote服务器
+- git push origin b1~3:main 指定将本地b1分支最新节点往前第三个节点起所有更老的节点推送到服务器端main分支，如果服务器端没有该分支，会创建新分支
+- git push origin :main 将空节点推给main，将会删除远端的main分支

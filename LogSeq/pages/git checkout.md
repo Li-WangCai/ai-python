@@ -1,0 +1,3 @@
+- git checkout -b newBranch node 在node上创建newBranch
+- git checkout -b newBranch origin/branch  在本地创建newBranch，并指定它[[track]]服务器端的origin/branch。设定新[[track]]以后，原来的track就停了
+-

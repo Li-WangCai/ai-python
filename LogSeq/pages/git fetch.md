@@ -1,0 +1,5 @@
+- git fetch 不加参数拉的是指定/默认[[track]]关系的node
+- git fetch origin foo 指定拉服务器上的foo分支
+- git fetch origin C2:bar 将服务器C2节点以及以前的节点拉到本地bar分支，如果bar分支不存在则新建一个
+- git fetch origin :bar 将空分支拉到本地建立一个新分支bar，等价于建立新分支
+-
