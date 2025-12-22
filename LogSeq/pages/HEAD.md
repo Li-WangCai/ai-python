@@ -4,3 +4,14 @@
 - **HEAD@{2}**：在 reflog 中 HEAD 的第 2 个历史位置
 - 用于查看当前版本的某几代祖先，
 - 如果HEAD不是最近的节点，在上面commit的时候一定要先branch
+-
+- HEAD和*的区别
+	- *
+		- 在 `git branch`命令的输出中，星号标记**当前检出**的分支
+		- 表示你在这个分支上进行工作
+		- 新的提交会在这个分支上创建
+	- HEAD
+		- **附加状态（Attached）**：指向一个分支。 checkout 分支的就指向分支。
+		- **分离状态（Detached）**：指向具体的提交。 checkout nodehash的就指向节点
+		-
+	-
