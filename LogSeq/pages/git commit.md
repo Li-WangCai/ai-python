@@ -1,0 +1,4 @@
+- 从git图的角度是在[[HEAD]]的基础上使用更改创建一个新节点，并且将当前branch的指针指向新节点
+- 从文件角度是把当前[[stage]]的文件提交到本地 [[repository]]
+- git commit -a 将 [[workspace]]的文件提交到 [[repository]]
+- git commit --amend 不创建新节点，而是把更改添加到当前[[HEAD]]

@@ -1,0 +1,2 @@
+- 暂存区，使用[[git add]] 文件名将[[workspace]]中文件加到stage区，使用[[git diff]] 不加参数比较[[workspace]]中的文件和 stage中的文件，使用[[git checkout]] 不加参数将 stage中文件拉到[[workspace]]
+- [[git reset]] file.txt 从暂存区移除，保留工作区修改。注意[[get reset]] nodeHash是将 [[repository]] 中当前branch回滚到node
