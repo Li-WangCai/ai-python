@@ -55,3 +55,8 @@
 	  a=[['a',1],['b',2],['c',3]]
 	  sorted(a,reverse=True,key=lambda x:x[1])
 	  ```
+- 临时拼接list
+	- ```python
+	  [[x,y] for x,y in zip(np.arange(1,10,1),np.arange(11,20,1))] 
+	  # zip产生的是一个iterator,必须通过列表解析做成列表
+	  ```

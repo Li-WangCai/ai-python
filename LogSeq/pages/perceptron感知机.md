@@ -1,0 +1,8 @@
+- 用于线性分类
+- [[input]]  X=[x1,x2,x3,...]
+- [[model]] f_p(X), p包含权重矢量W和位移b,另外有不连续的[[激活函数]]s()
+- [[output]] f(X)=s(X.W+b)
+- [[target]] Y
+- [[loss]] L(W,b)=|f(X)-Y|^2
+- [[optimization]] 选择初始W,b,[[梯度下降]] 优化L。得到最佳W，b
+-
