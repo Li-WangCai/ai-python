@@ -7,6 +7,7 @@
 		- 在[[workspace]]中工作，通过[[git diff]]看作了哪些改动，如果满意就[[git add]] 到[[stage]]。如果不满意就[[git checkout]] 退回[[stage]]中的版本
 		- 完成一个fix或feature之后，通过上一步的检查([[git diff]],[[git add]])，满意就把[[stage]]通过[[git commit]]提交到本地[[repository]]，如果不满意，就[[git reset]]将 [[repository]]中早期版本替换到[[stage]]中当前的版本。
 		- 一天结束以后，将本地 [[repository]]中的版本推到[[remote]]
+		- [[git stash]]提供了一个栈可以用来当做辅助存储和替换node
 	- 多分支操作
 		- 所有更改(feature和fix)都是先创建新分支，多次提交完成更改以后再把新分支和主分支合并。具体
 			- 先在本地 [[repository]]上建立分支[[git branch]] BranchName, 将 [[workspace]] 切换到新分支[[git checkout]] BranchName。或者用一个命令[[git checkout -b]] BanchName

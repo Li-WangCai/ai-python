@@ -5,6 +5,9 @@
 	  import numpy as np
 	  np.array([[1,2],[3,4]])
 	  
+	  #numpy array 变成列表  
+	  np.ones([3,2]).tolist()
+	  
 	  np.ones([3,2])
 	  np.zeros([3,2])
 	  np.arange(0,1,0.1)
