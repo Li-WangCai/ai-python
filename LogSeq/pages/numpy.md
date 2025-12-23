@@ -34,6 +34,8 @@
 	  a[1,:1]
 	  a[1,:-1]
 	  a>3 # [False,False,False,True,True,True] 先拍扁成一维，然后向量化执行运算a>3
+	  a>3 & b<2 #拍扁成一维，一个一个对位计算与&,得到一个[False, False,False,False,True,True]
+	  			#标记出所有的i:a[i]>3 且b[i]<2
 	  a[a>3] # [4,5,6]按值的条件引用 
 	  a[a%2==0] #数组中 所有偶数
 	  #以上引用都可以取值和赋值
@@ -44,7 +46,7 @@
 	  x=np.append(x,10)#尾部填上一个10
 	  x=np.insert(x,4,7.8) #4号位插入7.8
 	  x=np.delete(x,-1) #末尾删除
-	  
+	  x=np.unique(x)#数组去重
 	  ```
 - 运算
 	- ```python
