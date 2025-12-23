@@ -12,7 +12,9 @@
 	- [[pandas]] 表运算，可以理解成python模块中的Excel
 	- [[itertools]] 排列组合，遍历
 	- [[matplotlib]] 图形化
-	- [[ipywidgets]] 交互图形化
+	- [[ipywidgets]] 图形交互
+	- [[sklearn]] 机器学习
+	-
 	-
 	-
 -
