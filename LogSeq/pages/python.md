@@ -13,7 +13,8 @@
 	- [[itertools]] 排列组合，遍历
 	- [[matplotlib]] 图形化
 	- [[ipywidgets]] 图形交互
-	- [[sklearn]] 机器学习
+	- [[sklearn]] 机器学习，聚类，回归等基本算法
+	- [[PyTorch]] 深度学习
 	-
 	-
 	-
