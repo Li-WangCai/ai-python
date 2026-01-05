@@ -14,6 +14,7 @@
 	  np.arange(0,1,0.1).reshape(2,5)
 	  
 	  b=a #引用不是拷贝
+	  b=np.copy(a)#拷贝
 	  
 	  
 	  ```
